@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; }
+
+.app { min-height: 100vh; padding: 24px; background: #f5f6f8; color: #1f2328; }
+.app.dark { background: #0d1117; color: #e6edf3; }
+
+header { display: flex; justify-content: space-between; align-items: center; }
+.section { margin: 24px 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+
+.card { background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.dark .card { background: #161b22; }
+.card-title { font-size: 14px; opacity: .7; }
+.card-value { font-size: 28px; font-weight: 700; margin: 4px 0; }
+.change.up { color: #1a7f37; }
+.change.down { color: #cf222e; }
+
+.btn-row { display: flex; gap: 8px; }
+button { padding: 6px 12px; cursor: pointer; }
+.toggle { display: flex; gap: 8px; align-items: center; cursor: pointer; }
+select { padding: 6px; margin-bottom: 12px; }
+.list { padding-left: 20px; line-height: 1.8; }
